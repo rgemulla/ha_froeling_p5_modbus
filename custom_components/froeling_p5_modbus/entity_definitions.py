@@ -46,6 +46,7 @@ ENTITY_DEFINITIONS = {
             "unit": "%",
             "scaling": 1,
             "signed": False,
+            "state_class": "measurement",
             "type": "sensor",
         },
         # 1005;P5 Pellet - Lambdasonde - Restsauerstoff;%;10.0;s16
@@ -55,6 +56,7 @@ ENTITY_DEFINITIONS = {
             "scaling": 10,
             "decimals": 1,
             "signed": False,
+            "state_class": "measurement",
             "type": "sensor",
         },
         # TODO 1006;P5 Pellet - Freigabemanagement - Kessel freigegeben;;1.0;s16
@@ -84,6 +86,7 @@ ENTITY_DEFINITIONS = {
             "unit": "%",
             "scaling": 1,
             "signed": False,
+            "state_class": "measurement",
             "type": "sensor",
         },
         # 1501;Brennstoff Fördereinrichtung - Brennstoffverbrauch;t;100.0;s16
@@ -94,6 +97,7 @@ ENTITY_DEFINITIONS = {
             "decimals": 2,
             "device_class": "weight",
             "signed": False,
+            "state_class": "total",
             "type": "sensor",
         }
     },
@@ -106,6 +110,7 @@ ENTITY_DEFINITIONS = {
             "decimals": 2,
             "device_class": "weight",
             "signed": False,
+            "state_class": "measurement",
             "type": "sensor",
         }
     },
@@ -143,6 +148,7 @@ ENTITY_DEFINITIONS = {
         # 2003;Gemischter Heizkreis 1 - Heizkreispumpe - Ist Komponente aktiv;;1.0;s16
         "hk1_heizkreispumpe": {
             "register": 32004,
+            "state_class": "measurement",
             "type": "binary_sensor_from_register"
         },
         # 2004;Gemischter Heizkreis 1 - Betriebszustand Heizkreis;;1.0;s16
@@ -185,6 +191,7 @@ ENTITY_DEFINITIONS = {
             "unit": "%",
             "scaling": 1,
             "signed": False,
+            "state_class": "measurement",
             "type": "sensor",
         },
         # 6021;Puffersystem 1 - Ladeaktivität;;1.0;s16
