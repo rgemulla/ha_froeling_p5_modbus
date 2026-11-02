@@ -22,7 +22,8 @@ ENTITY_DEFINITIONS = {
         "puffer1_fuehlerA": {
             "register": 36001,
             "unit": "°C",
-            "scaling": 2,
+            "scaling": 10,
+            "decimal": 1,
             "device_class": "temperature",
             "state_class": "measurement",
             "type": "sensor",
@@ -31,6 +32,7 @@ ENTITY_DEFINITIONS = {
             "register": 36010,
             "unit": "°C",
             "scaling": 10,
+            "decimal": 1,
             "device_class": "temperature",
             "state_class": "measurement",
             "type": "sensor",
