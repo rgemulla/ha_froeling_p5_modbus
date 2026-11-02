@@ -39,7 +39,7 @@ ENTITY_DEFINITIONS = {
             "register": 36021,
             "unit": "%",
             "scaling": 1,
-            "signed": False;
+            "signed": False,
             "type": "sensor",
         },
         "puffer1_ladeaktivitaet": {
