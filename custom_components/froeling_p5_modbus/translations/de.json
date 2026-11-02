@@ -20,6 +20,7 @@
                     "p5_pellet": "P5 Pellet",
                     "brennstoff_foerdereinrichtung": "Brennstoff Fördereinrichtung",
                     "lager1": "Brennstofflagerraum",
+                    "hk1": "Gemischter Heizkreis",
                     "puffer1": "Puffersystem"
                 }
             }
@@ -38,6 +39,7 @@
                     "p5_pellet": "P5 Pellet",
                     "brennstoff_foerdereinrichtung": "Brennstoff Fördereinrichtung",
                     "lager1": "Brennstofflagerraum",
+                    "hk1": "Gemischter Heizkreis",
                     "puffer1": "Puffersystem"
                 }
             }
@@ -49,6 +51,7 @@
                 "p5_pellet": "P5 Pellet",
                 "brennstoff_foerdereinrichtung": "Brennstoff Fördereinrichtung",
                 "lager1": "Brennstofflagerraum",
+                "hk1": "Gemischter Heizkreis",
                 "puffer1": "Puffersystem"
             }
         }
