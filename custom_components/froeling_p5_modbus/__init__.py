@@ -18,7 +18,7 @@ from modbus_connection import ModbusTcpParams
 
 from .coordinator import FroelingDataUpdateCoordinator
 
-DOMAIN = "froeling_lambdatronic_modbus"
+DOMAIN = "froeling_p5_modbus"
 _LOGGER = logging.getLogger(__name__)
 
 CONFIG_SCHEMA = vol.Schema(

@@ -1,5 +1,5 @@
 {
-  "domain": "froeling_lambdatronic_modbus",
+  "domain": "froeling_p5_modbus",
   "name": "Froeling P5 Modbus",
   "codeowners": ["@rgemulla"],
   "config_flow": true,

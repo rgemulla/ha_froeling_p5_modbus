@@ -42,26 +42,26 @@
                     "puffer1": "Puffer 1"
                 }
             }
-        },
-        "entity": {
-            "sensor": {
-                "puffer1_fuehlerA": {
-                    "name": "Puffer 1 Fühler A"
-                },
-                "puffer1_fuehlerB": {
-                    "name": "Puffer 1 Fühler B"
-                },
-                "puffer1_ladezustand": {
-                    "name": "Puffer 1 Ladezustand"
-                },
-                "puffer1_ladeaktivitaet": {
-                    "name": "Puffer 1 Ladezustand",
-                    "state": {
-                        "0": "Keine Ladung",
-                        "1": "Beladen",
-                        "2": "Entladen",
-                        "3": "Be- und Entladen"
-                    }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "puffer1_fuehlerA": {
+                "name": "Puffer 1 Fühler A"
+            },
+            "puffer1_fuehlerB": {
+                "name": "Puffer 1 Fühler B"
+            },
+            "puffer1_ladezustand": {
+                "name": "Puffer 1 Ladezustand"
+            },
+            "puffer1_ladeaktivitaet": {
+                "name": "Puffer 1 Ladeaktivität",
+                "state": {
+                    "0": "Keine Ladung",
+                    "1": "Beladen",
+                    "2": "Entladen",
+                    "3": "Be- und Entladen"
                 }
             }
         }
