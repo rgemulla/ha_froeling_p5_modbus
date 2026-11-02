@@ -102,6 +102,7 @@
   "selector": {
     "categories": {
       "options": {
+          "puffer1": "Puffer 1",
         "sensor": "Allgemeine Sensoren",
         "kessel": "Kessel",
         "fehlerpuffer": "Fehlerpuffer",
@@ -138,6 +139,26 @@
     }
   },
   "entity": {
+      "puffer1": {
+        "puffer1_fuehlerA": {
+            "name": "Puffer 1 Fühler A"
+        },
+        "puffer1_fuehlerB": {
+            "name": "Puffer 1 Fühler B"
+        },
+        "puffer1_ladezustand": {
+            "name": "Puffer 1 Ladezustand"
+        },
+        "puffer1_ladeaktivitaet":
+          { "name": "Puffer 1 Ladezustand",
+            "state": {
+                "0": "Keine Ladung",
+                "1":"Beladen",
+                "2":"Entladen",
+                "3":"Be - und Entladen",
+            }
+          }
+      },
     "sensor": {
       "anlagenzustand": {
         "name": "Anlagenzustand",
