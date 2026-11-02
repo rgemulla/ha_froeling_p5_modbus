@@ -18,8 +18,8 @@
                 "description": "Die folgenden Entitäten wurden gefunden. Bitte wählen Sie aus, welche Sie zu Home Assistant hinzufügen möchten.",
                 "data": {
                     "p5_pellet": "P5 Pellet",
-                    "puffer1": "Puffersystem 1",
-                    "lager1": "Brennstofflagerraum 1"
+                    "puffer1": "Puffersystem",
+                    "lager1": "Brennstofflagerraum"
                 }
             }
         },
@@ -35,8 +35,8 @@
                 "description": "Die folgenden Entitäten wurden gefunden. Bitte wählen Sie aus, welche Sie zu Home Assistant hinzufügen möchten.",
                 "data": {
                     "p5_pellet": "P5 Pellet",
-                    "puffer1": "Puffersystem 1",
-                    "lager1": "Brennstofflagerraum 1"
+                    "puffer1": "Puffersystem",
+                    "lager1": "Brennstofflagerraum"
                 }
             }
         }
@@ -45,8 +45,8 @@
         "categories": {
             "options": {
                 "p5_pellet": "P5 Pellet",
-                "puffer1": "Puffersystem 1",
-                "lager1": "Brennstofflagerraum 1"
+                "puffer1": "Puffersystem",
+                "lager1": "Brennstofflagerraum"
             }
         }
     },
@@ -235,20 +235,17 @@
                     "177": "P5 Pellet 150"
                 }
             },
-            "p5_pellet_betriebsstunden": {
-                "name": "P5 Pellet Betriebsstunden"
-            },
             "puffer1_fuehlerA": {
-                "name": "Puffer 1 Fühler A"
+                "name": "Puffersystem Fühler A"
             },
             "puffer1_fuehlerJ": {
-                "name": "Puffer 1 Fühler J"
+                "name": "Puffersystem Fühler J"
             },
             "puffer1_ladezustand": {
-                "name": "Puffer 1 Ladezustand"
+                "name": "Puffersystem Ladezustand"
             },
             "puffer1_ladeaktivitaet": {
-                "name": "Puffer 1 Ladeaktivität",
+                "name": "Puffersystem Ladeaktivität",
                 "state": {
                     "0": "Keine Ladung",
                     "1": "Beladen",
@@ -257,7 +254,7 @@
                 }
             },
             "lager1_restbestand": {
-                "name": "Brennstofflagerraum 1 Restbestand"
+                "name": "Brennstofflagerraum Restbestand"
             }
         }
     }

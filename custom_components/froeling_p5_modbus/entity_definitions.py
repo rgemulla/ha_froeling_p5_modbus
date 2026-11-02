@@ -67,14 +67,15 @@ ENTITY_DEFINITIONS = {
         },
         # 1009;P5 Pellet - Fehlerzustand;;1.0;s16
         # 1010;P5 Pellet - Betriebsstunden für den Kaskadenverbund;;10.0;s16
-        "p5_pellet_betriebsstunden": {
-            "register": 31011,
-            "unit": "h",
-            "scaling": 10,
-            "decimals": 1,
-            "signed": False,
-            "type": "sensor"
-        }
+        # RG: das scheinen nicht die Betriebsstunden der Anlage zu sein...
+        # "p5_pellet_betriebsstunden": {
+        #     "register": 31011,
+        #     "unit": "h",
+        #     "scaling": 10,
+        #     "decimals": 1,
+        #     "signed": False,
+        #     "type": "sensor"
+        # }
     },
     "lager1": {
         "lager1_restbestand": {
