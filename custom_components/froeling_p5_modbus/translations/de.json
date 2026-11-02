@@ -18,8 +18,9 @@
                 "description": "Die folgenden Entitäten wurden gefunden. Bitte wählen Sie aus, welche Sie zu Home Assistant hinzufügen möchten.",
                 "data": {
                     "p5_pellet": "P5 Pellet",
-                    "puffer1": "Puffersystem",
-                    "lager1": "Brennstofflagerraum"
+                    "brennstoff_foerdereinrichtung": "Brennstoff Fördereinrichtung",
+                    "lager1": "Brennstofflagerraum",
+                    "puffer1": "Puffersystem"
                 }
             }
         },
@@ -35,8 +36,9 @@
                 "description": "Die folgenden Entitäten wurden gefunden. Bitte wählen Sie aus, welche Sie zu Home Assistant hinzufügen möchten.",
                 "data": {
                     "p5_pellet": "P5 Pellet",
-                    "puffer1": "Puffersystem",
-                    "lager1": "Brennstofflagerraum"
+                    "brennstoff_foerdereinrichtung": "Brennstoff Fördereinrichtung",
+                    "lager1": "Brennstofflagerraum",
+                    "puffer1": "Puffersystem"
                 }
             }
         }
@@ -45,8 +47,9 @@
         "categories": {
             "options": {
                 "p5_pellet": "P5 Pellet",
-                "puffer1": "Puffersystem",
-                "lager1": "Brennstofflagerraum"
+                "brennstoff_foerdereinrichtung": "Brennstoff Fördereinrichtung",
+                "lager1": "Brennstofflagerraum",
+                "puffer1": "Puffersystem"
             }
         }
     },
@@ -235,6 +238,15 @@
                     "177": "P5 Pellet 150"
                 }
             },
+            "brennstoff_foerdereinrichtung_zyklon_fuellstand": {
+                "name": "Brennstoff Fördereinrichtung Zyklon Füllstand"
+            },
+            "brennstoff_foerdereinrichtung_brennstoffverbrauch": {
+                "name": "Brennstoff Fördereinrichtung Brennstoffverbrauch"
+            },
+            "lager1_restbestand": {
+                "name": "Brennstofflagerraum Restbestand"
+            },
             "puffer1_fuehlerA": {
                 "name": "Puffersystem Fühler A"
             },
@@ -252,9 +264,6 @@
                     "2": "Entladen",
                     "3": "Be- und Entladen"
                 }
-            },
-            "lager1_restbestand": {
-                "name": "Brennstofflagerraum Restbestand"
             }
         }
     }

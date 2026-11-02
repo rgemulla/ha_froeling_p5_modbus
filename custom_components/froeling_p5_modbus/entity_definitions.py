@@ -77,7 +77,28 @@ ENTITY_DEFINITIONS = {
         #     "type": "sensor"
         # }
     },
+    "brennstoff_foerdereinrichtung": {
+        # 1500;Brennstoff Fördereinrichtung - Zyklonsystem - Zyklon - Füllstand in Prozent;%;1.0;s16
+        "brennstoff_foerdereinrichtung_zyklon_fuellstand": {
+            "register": 31501,
+            "unit": "%",
+            "scaling": 1,
+            "signed": False,
+            "type": "sensor",
+        },
+        # 1501;Brennstoff Fördereinrichtung - Brennstoffverbrauch;t;100.0;s16
+        "brennstoff_foerdereinrichtung_brennstoffverbrauch": {
+            "register": 31502,
+            "unit": "t",
+            "scaling": 100,
+            "decimals": 2,
+            "device_class": "weight",
+            "signed": False,
+            "type": "sensor",
+        }
+    },
     "lager1": {
+        # 1900;Brennstofflagerraum 1 - Brennstofflager Restbestand;t;100.0;s16
         "lager1_restbestand": {
             "register": 31901,
             "unit": "t",
@@ -88,7 +109,14 @@ ENTITY_DEFINITIONS = {
             "type": "sensor",
         }
     },
+    # 2000;Gemischter Heizkreis 1 - Außentemperatur;°C;10.0;s16
+    # 2001;Gemischter Heizkreis 1 - Vorlauf-Isttemperatur - Temperatur Wert des Sensors;°C;10.0;s16
+    # 2002;Gemischter Heizkreis 1 - Vorlauf-Solltemperatur;°C;10.0;s16
+    # 2003;Gemischter Heizkreis 1 - Heizkreispumpe - Ist Komponente aktiv;;1.0;s16
+    # 2004;Gemischter Heizkreis 1 - Betriebszustand Heizkreis;;1.0;s16
+    # 2005;Gemischter Heizkreis 1 - Info;;1.0;s16
     "puffer1": {
+        # 6000;Puffersystem 1 - Pufferspeicher 1 - Fühlerleiste - Fühler A - Temperatur Wert des Sensors;°C;10.0;s16
         "puffer1_fuehlerA": {
             "register": 36001,
             "unit": "°C",
@@ -98,6 +126,7 @@ ENTITY_DEFINITIONS = {
             "state_class": "measurement",
             "type": "sensor",
         },
+        # 6009;Puffersystem 1 - Pufferspeicher 1 - Fühlerleiste - Fühler J - Temperatur Wert des Sensors;°C;10.0;s16
         "puffer1_fuehlerJ": {
             "register": 36010,
             "unit": "°C",
@@ -107,6 +136,7 @@ ENTITY_DEFINITIONS = {
             "state_class": "measurement",
             "type": "sensor",
         },
+        # 6020;Puffersystem 1 - Ladezustand;%;1.0;s16
         "puffer1_ladezustand": {
             "register": 36021,
             "unit": "%",
@@ -114,6 +144,7 @@ ENTITY_DEFINITIONS = {
             "signed": False,
             "type": "sensor",
         },
+        # 6021;Puffersystem 1 - Ladeaktivität;;1.0;s16
         "puffer1_ladeaktivitaet": {
             "register": 36022,
             "type": "text",
