@@ -247,6 +247,28 @@
             "lager1_restbestand": {
                 "name": "Brennstofflagerraum Restbestand"
             },
+            "hk1_aussentemperatur": {},
+            "hk1_vorlauf_isttemperatur": {
+                "name": "Gemischter Heizkreis Vorlauf-Isttemperatur"
+            },
+            "hk1_vorlauf_solltemperatur": {
+                "name": "Gemischter Heizkreis Vorlauf-Solltemperatu"
+            },
+            "hk1_heizkreispumpe": {
+                "name": "Gemischter Heizkreis Heizkreispumpe aktiv"
+            },
+            "hk1_betriebszustand": {
+                "name": "Gemischter Heizkreis Betriebszustand",
+                "state": {
+                    "0": "Aus",
+                    "1": "Frostschutzbetrieb",
+                    "2": "Heizen",
+                    "3": "Fehler",
+                    "4": "Zwangsentwärmung",
+                    "5": "Warmwasserladung",
+                    "6": "Demomodus aktiv"
+                }
+            },
             "puffer1_fuehlerA": {
                 "name": "Puffersystem Fühler A"
             },

@@ -57,16 +57,16 @@ ENTITY_DEFINITIONS = {
             "signed": False,
             "type": "sensor",
         },
-        # 1006;P5 Pellet - Freigabemanagement - Kessel freigegeben;;1.0;s16
-        # 1007;P5 Pellet - Hydraulikanforderung - Zubringer - Erzeuger aktuell aktiv;;1.0;s16
+        # TODO 1006;P5 Pellet - Freigabemanagement - Kessel freigegeben;;1.0;s16
+        # TODO 1007;P5 Pellet - Hydraulikanforderung - Zubringer - Erzeuger aktuell aktiv;;1.0;s16
         # 1008;P5 Pellet - Kesseltyp;;1.0;s16
         "p5_pellet_kesseltyp": {
             "register": 31009,
             "type": "text",
             "translation_key": "p5_pellet_kesseltyp"
         },
-        # 1009;P5 Pellet - Fehlerzustand;;1.0;s16
-        # 1010;P5 Pellet - Betriebsstunden für den Kaskadenverbund;;10.0;s16
+        # TODO 1009;P5 Pellet - Fehlerzustand;;1.0;s16
+        # TODO 1010;P5 Pellet - Betriebsstunden für den Kaskadenverbund;;10.0;s16
         # RG: das scheinen nicht die Betriebsstunden der Anlage zu sein...
         # "p5_pellet_betriebsstunden": {
         #     "register": 31011,
@@ -109,12 +109,50 @@ ENTITY_DEFINITIONS = {
             "type": "sensor",
         }
     },
-    # 2000;Gemischter Heizkreis 1 - Außentemperatur;°C;10.0;s16
-    # 2001;Gemischter Heizkreis 1 - Vorlauf-Isttemperatur - Temperatur Wert des Sensors;°C;10.0;s16
-    # 2002;Gemischter Heizkreis 1 - Vorlauf-Solltemperatur;°C;10.0;s16
-    # 2003;Gemischter Heizkreis 1 - Heizkreispumpe - Ist Komponente aktiv;;1.0;s16
-    # 2004;Gemischter Heizkreis 1 - Betriebszustand Heizkreis;;1.0;s16
-    # 2005;Gemischter Heizkreis 1 - Info;;1.0;s16
+    "hk1": {
+        # 2000;Gemischter Heizkreis 1 - Außentemperatur;°C;10.0;s16
+        "hk1_aussentemperatur": {
+            "register": 32001,
+            "unit": "°C",
+            "scaling": 10,
+            "decimals": 1,
+            "device_class": "temperature",
+            "state_class": "measurement",
+            "type": "sensor",
+        },
+        # 2001;Gemischter Heizkreis 1 - Vorlauf-Isttemperatur - Temperatur Wert des Sensors;°C;10.0;s16
+        "hk1_vorlauf_isttemperatur": {
+            "register": 32002,
+            "unit": "°C",
+            "scaling": 10,
+            "decimals": 1,
+            "device_class": "temperature",
+            "state_class": "measurement",
+            "type": "sensor",
+        },
+        # 2002;Gemischter Heizkreis 1 - Vorlauf-Solltemperatur;°C;10.0;s16
+        "hk1_vorlauf_solltemperatur": {
+            "register": 32003,
+            "unit": "°C",
+            "scaling": 10,
+            "decimals": 1,
+            "device_class": "temperature",
+            "state_class": "measurement",
+            "type": "sensor",
+        },
+        # 2003;Gemischter Heizkreis 1 - Heizkreispumpe - Ist Komponente aktiv;;1.0;s16
+        "hk1_heizkreispumpe": {
+            "register": 32004,
+            "type": "binary_sensor_from_register"
+        },
+        # 2004;Gemischter Heizkreis 1 - Betriebszustand Heizkreis;;1.0;s16
+        "hk1_betriebszustand": {
+            "register": 32005,
+            "type": "text",
+            "translation_key": "hk1_betriebszustand"
+        }
+        # TODO 2005;Gemischter Heizkreis 1 - Info;;1.0;s16
+    },
     "puffer1": {
         # 6000;Puffersystem 1 - Pufferspeicher 1 - Fühlerleiste - Fühler A - Temperatur Wert des Sensors;°C;10.0;s16
         "puffer1_fuehlerA": {
