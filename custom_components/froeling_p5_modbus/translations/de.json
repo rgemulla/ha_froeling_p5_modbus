@@ -250,15 +250,14 @@
             "lager1_restbestand": {
                 "name": "Brennstofflagerraum Restbestand"
             },
-            "hk1_aussentemperatur": {},
+            "hk1_aussentemperatur": {
+                "name": "Gemischter Heizkreis Außentemperatur"
+            },
             "hk1_vorlauf_isttemperatur": {
                 "name": "Gemischter Heizkreis Vorlauf-Isttemperatur"
             },
             "hk1_vorlauf_solltemperatur": {
-                "name": "Gemischter Heizkreis Vorlauf-Solltemperatu"
-            },
-            "hk1_heizkreispumpe": {
-                "name": "Gemischter Heizkreis Heizkreispumpe aktiv"
+                "name": "Gemischter Heizkreis Vorlauf-Solltemperatur"
             },
             "hk1_betriebszustand": {
                 "name": "Gemischter Heizkreis Betriebszustand",
@@ -309,6 +308,11 @@
                     "2": "Entladen",
                     "3": "Be- und Entladen"
                 }
+            }
+        },
+        "binary_sensor": {
+            "hk1_heizkreispumpe": {
+                "name": "Gemischter Heizkreis Pumpe aktiv"
             }
         }
     }
