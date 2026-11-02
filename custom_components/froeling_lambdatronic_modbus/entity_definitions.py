@@ -21,7 +21,7 @@ ENTITY_DEFINITIONS = {
             "register": 36001,
             "unit": "°C",
             "scaling": 10,
-            "decimal": 1,
+            "decimals": 1,
             "device_class": "temperature",
             "state_class": "measurement",
             "type": "sensor",
@@ -30,7 +30,7 @@ ENTITY_DEFINITIONS = {
             "register": 36010,
             "unit": "°C",
             "scaling": 10,
-            "decimal": 1,
+            "decimals": 1,
             "device_class": "temperature",
             "state_class": "measurement",
             "type": "sensor",
@@ -44,7 +44,7 @@ ENTITY_DEFINITIONS = {
         },
         "puffer1_ladeaktivitaet": {
             "register": 36022,
-            "type": "binary_sensor_from_register",
+            "type": "sensor",
         },
     }
 }

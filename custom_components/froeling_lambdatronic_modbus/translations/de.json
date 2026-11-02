@@ -44,7 +44,7 @@
             }
         },
         "entity": {
-            "puffer1": {
+            "sensor": {
                 "puffer1_fuehlerA": {
                     "name": "Puffer 1 Fühler A"
                 },
