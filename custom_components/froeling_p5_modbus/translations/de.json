@@ -131,13 +131,13 @@
                 "name": "P5 Pellet Rücklauftemperatur"
             },
             "p5_pellet_kesselpumpe_sollansteuerung": {
-                "name": "P5 Pellet Kesselpumpe Sollansteuerung"
+                "name": "P5 Pellet Sollansteuerung"
             },
             "p5_pellet_lambdasonde_restsauerstoff": {
                 "name": "P5 Pellet Restsauerstoff"
             },
             "p5_pellet_kesseltyp": {
-                "name": "P5 Pellet Restsauerstoff",
+                "name": "P5 Pellet Kesseltyp",
                 "state": {
                     "0": "S1 Turbo 15",
                     "1": "S1 Turbo 20",

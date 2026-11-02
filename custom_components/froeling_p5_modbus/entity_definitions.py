@@ -52,7 +52,8 @@ ENTITY_DEFINITIONS = {
         "p5_pellet_lambdasonde_restsauerstoff": {
             "register": 31006,
             "unit": "%",
-            "scaling": 1,
+            "scaling": 10,
+            "decimals": 1,
             "signed": False,
             "type": "sensor",
         },
