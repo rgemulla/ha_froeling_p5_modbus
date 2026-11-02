@@ -272,6 +272,26 @@
                     "6": "Demomodus aktiv"
                 }
             },
+            "hk1_info": {
+                "name": "Gemischter Heizkreis Info",
+                "state": {
+                    "0": "Außentemperatur überschritten",
+                    "1": "Raumtemperatur überschritten",
+                    "2": "Max. Vorlauftemperatur überschritten",
+                    "3": "Brauchwasserbereitung aktiv",
+                    "4": "Brauchwasser-Vorrang",
+                    "5": "Wärmequellentemperatur unterschritten",
+                    "7": "Aktiv / Betriebsbereit",
+                    "8": "Notbetrieb - keine Außentemperatur",
+                    "9": "Notbetrieb - keine Raumtemperatur",
+                    "10": "Notbetrieb - keine Wärmequellentemperatur",
+                    "11": "Aktiv - Außentemperatur wird ignoriert",
+                    "12": "Vorlauftemperaturfühler fehlerhaft",
+                    "13": "Keine Freigabe von Wärmequelle",
+                    "14": "Vorlauf-Solltemperatur unterschritten",
+                    "15": "keine externe Freigabe"
+                }
+            },
             "puffer1_fuehlerA": {
                 "name": "Puffersystem Fühler A"
             },

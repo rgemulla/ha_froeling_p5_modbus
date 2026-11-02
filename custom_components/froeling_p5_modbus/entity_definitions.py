@@ -150,8 +150,13 @@ ENTITY_DEFINITIONS = {
             "register": 32005,
             "type": "text",
             "translation_key": "hk1_betriebszustand"
+        },
+        # 2005;Gemischter Heizkreis 1 - Info;;1.0;s16
+        "hk1_info": {
+            "register": 32006,
+            "type": "text",
+            "translation_key": "hk1_info"
         }
-        # TODO 2005;Gemischter Heizkreis 1 - Info;;1.0;s16
     },
     "puffer1": {
         # 6000;Puffersystem 1 - Pufferspeicher 1 - Fühlerleiste - Fühler A - Temperatur Wert des Sensors;°C;10.0;s16
