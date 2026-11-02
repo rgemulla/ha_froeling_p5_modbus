@@ -16,6 +16,17 @@
 # input: offset 30001
 
 ENTITY_DEFINITIONS = {
+    "lager1": {
+        "lager1_restbestand": {
+            "register": 31901,
+            "unit": "t",
+            "scaling": 100,
+            "decimals": 2,
+            "device_class": "weight",
+            "signed": False,
+            "type": "sensor",
+        }
+    },
     "puffer1": {
         "puffer1_fuehlerA": {
             "register": 36001,

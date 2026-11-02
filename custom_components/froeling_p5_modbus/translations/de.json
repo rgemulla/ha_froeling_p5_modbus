@@ -17,7 +17,8 @@
                 "title": "Entitäten auswählen",
                 "description": "Die folgenden Entitäten wurden gefunden. Bitte wählen Sie aus, welche Sie zu Home Assistant hinzufügen möchten.",
                 "data": {
-                    "puffer1": "Puffer 1"
+                    "puffer1": "Puffersytem 1",
+                    "lager1": "Brennstofflagerraum 1"
                 }
             }
         },
@@ -32,14 +33,16 @@
                 "title": "Entitäten auswählen",
                 "description": "Die folgenden Entitäten wurden gefunden. Bitte wählen Sie aus, welche Sie zu Home Assistant hinzufügen möchten.",
                 "data": {
-                    "puffer1": "Puffer 1"
+                    "puffer1": "Puffersytem 1",
+                    "lager1": "Brennstofflagerraum 1"
                 }
             }
         },
         "selector": {
             "categories": {
                 "options": {
-                    "puffer1": "Puffer 1"
+                    "puffer1": "Puffersytem 1",
+                    "lager1": "Brennstofflagerraum 1"
                 }
             }
         }
@@ -49,8 +52,8 @@
             "puffer1_fuehlerA": {
                 "name": "Puffer 1 Fühler A"
             },
-            "puffer1_fuehlerB": {
-                "name": "Puffer 1 Fühler B"
+            "puffer1_fuehlerJ": {
+                "name": "Puffer 1 Fühler J"
             },
             "puffer1_ladezustand": {
                 "name": "Puffer 1 Ladezustand"
@@ -63,6 +66,9 @@
                     "2": "Entladen",
                     "3": "Be- und Entladen"
                 }
+            },
+            "lager1_restbestand": {
+                "name": "Brennstofflagerraum 1 Restbestand"
             }
         }
     }
