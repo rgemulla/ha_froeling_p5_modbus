@@ -2912,7 +2912,7 @@ ENTITY_DEFINITIONS = {
             "type": "sensor",
         },
         "pelletlager_restbestand": {
-            "register": 31901,
+            "register": 41901,
             "unit": "t",
             "scaling": 100,
             "decimals": 2,
