@@ -17,7 +17,8 @@
                 "title": "Entitäten auswählen",
                 "description": "Die folgenden Entitäten wurden gefunden. Bitte wählen Sie aus, welche Sie zu Home Assistant hinzufügen möchten.",
                 "data": {
-                    "puffer1": "Puffersytem 1",
+                    "p5_pellet": "P5 Pellet",
+                    "puffer1": "Puffersystem 1",
                     "lager1": "Brennstofflagerraum 1"
                 }
             }
@@ -33,22 +34,210 @@
                 "title": "Entitäten auswählen",
                 "description": "Die folgenden Entitäten wurden gefunden. Bitte wählen Sie aus, welche Sie zu Home Assistant hinzufügen möchten.",
                 "data": {
-                    "puffer1": "Puffersytem 1",
-                    "lager1": "Brennstofflagerraum 1"
-                }
-            }
-        },
-        "selector": {
-            "categories": {
-                "options": {
-                    "puffer1": "Puffersytem 1",
+                    "p5_pellet": "P5 Pellet",
+                    "puffer1": "Puffersystem 1",
                     "lager1": "Brennstofflagerraum 1"
                 }
             }
         }
     },
+    "selector": {
+        "categories": {
+            "options": {
+                "p5_pellet": "P5 Pellet",
+                "puffer1": "Puffersystem 1",
+                "lager1": "Brennstofflagerraum 1"
+            }
+        }
+    },
     "entity": {
         "sensor": {
+            "p5_pellet_kesselzustand": {
+                "name": "P5 Pellet Kesselzustand",
+                "state": {
+                    "0": "Initialisierung",
+                    "1": "Störung",
+                    "2": "Feuer aus",
+                    "3": "Anheizen",
+                    "4": "Heizen",
+                    "5": "Vorbelüften",
+                    "6": "Tür offen kalt",
+                    "7": "Auf Zünden warten",
+                    "8": "Zünden",
+                    "9": "Feuererhaltung",
+                    "10": "Feuererhaltung kein Feuer",
+                    "11": "Sensorcheck",
+                    "12": "Tür offen Heizen",
+                    "13": "Tür offen Zünden",
+                    "14": "Weiterheizen",
+                    "15": "Update",
+                    "30": "Abstellen Warten",
+                    "31": "",
+                    "32": "Fehlerbehebung",
+                    "33": "Abreinigen",
+                    "34": "Betriebsbereit",
+                    "35": "Heizen beenden",
+                    "36": "Heizen beenden - Reinigungsanforderung",
+                    "37": "Störung kalt",
+                    "38": "Störung warm",
+                    "39": "Vorbereiten kalt",
+                    "40": "Vorbereiten warm",
+                    "41": "Vorwärmen",
+                    "42": "Reinigung (ServiceTaste)",
+                    "43": "Rost reinigen",
+                    "44": "Stokerleeren",
+                    "45": "Vorbelüften kalt",
+                    "46": "Vorbelüften warm",
+                    "47": "Zyklonbefüllung starten",
+                    "48": "Zündzeit abgelaufen",
+                    "49": "Zündfehler auslösen",
+                    "50": "Endtest",
+                    "51": "AGR reinigen",
+                    "52": "Demo Feuer Aus",
+                    "53": "Demo Betriebsbereit",
+                    "54": "Demo Heizen",
+                    "55": "Vorbereitung fehlgeschlagen, Zwangsreinigung starten",
+                    "56": "Startphase Heizen starten",
+                    "57": "Startphase Heizen",
+                    "58": "Detektierung externe Verbrennung",
+                    "59": "Scheitholztür offen Demo",
+                    "60": "Scheitholztür offen, keine Pelletverbrennung",
+                    "61": "Scheitholztür offen, Pelletverbrennung unterbrochen",
+                    "63": "Scheitholzerkennung",
+                    "64": "Pelletbetrieb",
+                    "65": "Scheitholzbetrieb",
+                    "66": "Abstellen Warten externe Verbrennung",
+                    "67": "Abstellen Warten starten",
+                    "68": "Externe Verbrennung erkannt",
+                    "69": "Feuer aus, Pelletseinheit aktiv",
+                    "70": "Zünden starten",
+                    "71": "Wartung",
+                    "72": "Wartung starten",
+                    "73": "Wartung fortsetzen",
+                    "74": "Stokerleeren nach Scheitholztür offen",
+                    "75": "Feuer aus, Pelletseinheit zünden",
+                    "76": "Tür offen Feuererhaltung kein Feuer",
+                    "77": "Tür offen Feuererhaltung",
+                    "78": "Zündung defekt oder nicht angesteckt"
+                }
+            },
+            "p5_pellet_abgastemperatur": {
+                "name": "P5 Pellet Abgastemperatur"
+            },
+            "p5_pellet_kesseltemperatur": {
+                "name": "P5 Pellet Kesseltemperatur"
+            },
+            "p5_pellet_ruecklauftemperatur": {
+                "name": "P5 Pellet Rücklauftemperatur"
+            },
+            "p5_pellet_kesselpumpe_sollansteuerung": {
+                "name": "P5 Pellet Kesselpumpe Sollansteuerung"
+            },
+            "p5_pellet_lambdasonde_restsauerstoff": {
+                "name": "P5 Pellet Restsauerstoff"
+            },
+            "p5_pellet_kesseltyp": {
+                "name": "P5 Pellet Restsauerstoff",
+                "state": {
+                    "0": "S1 Turbo 15",
+                    "1": "S1 Turbo 20",
+                    "2": "S3 Turbo 18",
+                    "3": "S3 Turbo 20",
+                    "4": "S3 Turbo 30",
+                    "5": "S3 Turbo 40",
+                    "6": "S3 Turbo 45",
+                    "7": "S4 Turbo 22",
+                    "8": "S4 Turbo 28",
+                    "9": "S4 Turbo 34",
+                    "10": "S4 Turbo 40",
+                    "11": "S4 Turbo 50",
+                    "12": "S4 Turbo 60",
+                    "13": "S4 Turbo 15",
+                    "14": "PE1 7",
+                    "15": "PE1 10",
+                    "16": "PE1 15",
+                    "17": "PE1 20",
+                    "18": "PE1 25",
+                    "19": "PE1 30",
+                    "20": "PE1 35",
+                    "76": "P5 Pellet 12",
+                    "77": "P5 Pellet 15",
+                    "78": "P5 Pellet 18",
+                    "79": "P5 Pellet 20",
+                    "80": "P5 Pellet 25",
+                    "81": "P5 Pellet 30",
+                    "82": "P5 Pellet 32",
+                    "83": "P5 Pellet 35",
+                    "84": "P5 Pellet 40",
+                    "85": "P5 Pellet 70",
+                    "86": "P5 Pellet 80",
+                    "87": "P5 Pellet 90",
+                    "88": "P5 Pellet 100",
+                    "89": "P5 Pellet 105",
+                    "90": "Hydraulikumfeld Regelung",
+                    "91": "P5 Pellet 45",
+                    "92": "P5 Pellet 50",
+                    "93": "P5 Pellet 55",
+                    "94": "P5 Pellet 60",
+                    "95": "S2 Turbo 15",
+                    "96": "S2 Turbo 20",
+                    "97": "LEO-S2-20",
+                    "119": "S5 Turbo 22",
+                    "120": "S5 Turbo 30",
+                    "121": "S5 Turbo 34",
+                    "122": "S5 Turbo 40",
+                    "123": "S5 Turbo 48",
+                    "124": "S5 Dual 22",
+                    "125": "S5 Dual 30",
+                    "126": "S5 Dual 34",
+                    "127": "S5 Dual 40",
+                    "128": "S5 Dual 48",
+                    "129": "S2 Dual compact 15",
+                    "130": "S2 Dual compact 20",
+                    "131": "S5 Turbo 32",
+                    "132": "S5 Dual 32",
+                    "141": "LEO-S2-15",
+                    "142": "LEO2-22",
+                    "143": "LEO2-32",
+                    "144": "LEO2-30",
+                    "145": "LEO2-34",
+                    "146": "LEO2-40",
+                    "147": "LEO2-48",
+                    "148": "PEO-S2-12",
+                    "149": "PEO-S2-15",
+                    "150": "PEO-S2-18",
+                    "151": "PEO-S2-20",
+                    "152": "PEO-S2-25",
+                    "153": "PEO-S2-30",
+                    "154": "PEO-S2-32",
+                    "155": "PEO-S2-35",
+                    "156": "PEO-S2-40",
+                    "157": "PEO-S2-45",
+                    "158": "PEO-S2-50",
+                    "159": "PEO-S2-55",
+                    "160": "PEO-S2-60",
+                    "161": "PEO-S2-70",
+                    "162": "PEO-S2-80",
+                    "163": "PEO-S2-90",
+                    "164": "PEO-S2-100",
+                    "165": "PEO-S2-105",
+                    "166": "DUO-S2-15",
+                    "167": "DUO-S2-20",
+                    "168": "DUO2-22",
+                    "169": "DUO2-30",
+                    "170": "DUO2-34",
+                    "171": "DUO2-40",
+                    "172": "DUO2-48",
+                    "173": "P5 Pellet 110",
+                    "174": "P5 Pellet 120",
+                    "175": "P5 Pellet 130",
+                    "176": "P5 Pellet 140",
+                    "177": "P5 Pellet 150"
+                }
+            },
+            "p5_pellet_betriebsstunden": {
+                "name": "P5 Pellet Betriebsstunden"
+            },
             "puffer1_fuehlerA": {
                 "name": "Puffer 1 Fühler A"
             },

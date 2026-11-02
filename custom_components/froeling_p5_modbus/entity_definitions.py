@@ -1,21 +1,80 @@
 """Entity Definitions."""
 
-# ENTITY_DEFINITIONS = {
-#     "sensor": {
-#         "aussentemperatur": {
-#             "register": 2000,
-#             "unit": "°C",
-#             "scaling": 10,
-#             "device_class": "temperature",
-#             "state_class": "measurement",
-#             "type": "sensor",
-#         },
-#     },
-# }
-
 # input: offset 30001
 
 ENTITY_DEFINITIONS = {
+    "p5_pellet": {
+        # 1000;P5 Pellet - Kesselzustand;;1.0;s16
+        "p5_pellet_kesselzustand": {
+            "register": 31001,
+            "type": "text",
+            "translation_key": "p5_pellet_kesselzustand"
+        },
+        # 1001;P5 Pellet - Abgastemperaturfühler - Temperatur Wert des Sensors;°C;10.0;s16
+        "p5_pellet_abgastemperatur": {
+            "register": 31002,
+            "unit": "°C",
+            "scaling": 10,
+            "decimals": 1,
+            "device_class": "temperature",
+            "state_class": "measurement",
+            "type": "sensor"
+        },
+        # 1002;P5 Pellet - Kesseltemperaturfühler - Temperatur Wert des Sensors;°C;10.0;s16
+        "p5_pellet_kesseltemperatur": {
+            "register": 31003,
+            "unit": "°C",
+            "scaling": 10,
+            "decimals": 1,
+            "device_class": "temperature",
+            "state_class": "measurement",
+            "type": "sensor"
+        },
+        # 1003;P5 Pellet - Rücklaufanhebung - Rücklauftemperatur - Temperatur Wert des Sensors;°C;10.0;s16
+        "p5_pellet_ruecklauftemperatur": {
+            "register": 31004,
+            "unit": "°C",
+            "scaling": 10,
+            "decimals": 1,
+            "device_class": "temperature",
+            "state_class": "measurement",
+            "type": "sensor"
+        },
+        # 1004;P5 Pellet - Kesselpumpe - Sollansteuerung;%;1.0;s16
+        "p5_pellet_kesselpumpe_sollansteuerung": {
+            "register": 31005,
+            "unit": "%",
+            "scaling": 1,
+            "signed": False,
+            "type": "sensor",
+        },
+        # 1005;P5 Pellet - Lambdasonde - Restsauerstoff;%;10.0;s16
+        "p5_pellet_lambdasonde_restsauerstoff": {
+            "register": 31006,
+            "unit": "%",
+            "scaling": 1,
+            "signed": False,
+            "type": "sensor",
+        },
+        # 1006;P5 Pellet - Freigabemanagement - Kessel freigegeben;;1.0;s16
+        # 1007;P5 Pellet - Hydraulikanforderung - Zubringer - Erzeuger aktuell aktiv;;1.0;s16
+        # 1008;P5 Pellet - Kesseltyp;;1.0;s16
+        "p5_pellet_kesseltyp": {
+            "register": 31009,
+            "type": "text",
+            "translation_key": "p5_pellet_kesseltyp"
+        },
+        # 1009;P5 Pellet - Fehlerzustand;;1.0;s16
+        # 1010;P5 Pellet - Betriebsstunden für den Kaskadenverbund;;10.0;s16
+        "p5_pellet_betriebsstunden": {
+            "register": 31011,
+            "unit": "h",
+            "scaling": 10,
+            "decimals": 1,
+            "signed": False,
+            "type": "sensor"
+        }
+    },
     "lager1": {
         "lager1_restbestand": {
             "register": 31901,
