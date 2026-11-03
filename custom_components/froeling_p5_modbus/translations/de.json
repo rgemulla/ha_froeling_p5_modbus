@@ -331,6 +331,13 @@
             }
         },
         "select": {
+            "p5_pellet_betriebsart": {
+                "name": "P5 Pellet Betriebsart",
+                "state": {
+                    "aus": "Aus",
+                    "ein": "Ein"
+                }
+            },
             "hk1_betriebsart": {
                 "name": "Gemischter Heizkreis Betriebsart",
                 "state": {

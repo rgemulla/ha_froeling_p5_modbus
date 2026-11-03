@@ -5,6 +5,19 @@
 
 ENTITY_DEFINITIONS = {
     "p5_pellet": {
+        # HOLDING
+        # 1000;P5 Pellet - Betriebsartmanagement - Betriebsart;;1.0;s16;0;1;R/W
+        "p5_pellet_betriebsart": {
+            "register": 41001,
+            "options": [
+                "aus",
+                "ein",
+            ],
+            "min": 0,
+            "max": 1,
+            "type": "select"
+        },
+        # INPUT
         # 1000;P5 Pellet - Kesselzustand;;1.0;s16
         "p5_pellet_kesselzustand": {
             "register": 31001,
@@ -150,8 +163,8 @@ ENTITY_DEFINITIONS = {
             "unit": "°C",
             "scaling": 10,
             "decimals": 1,
-            "min": 10,
-            "max": 30,
+            "min": 100,
+            "max": 300,
             "device_class": "temperature",
             "register_type": "holding",
         },
@@ -161,8 +174,8 @@ ENTITY_DEFINITIONS = {
             "unit": "°C",
             "scaling": 10,
             "decimals": 1,
-            "min": 10,
-            "max": 30,
+            "min": 100,
+            "max": 300,
             "device_class": "temperature",
             "register_type": "holding",
         },
