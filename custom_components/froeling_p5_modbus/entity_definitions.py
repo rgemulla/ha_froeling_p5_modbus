@@ -1,6 +1,7 @@
 """Entity Definitions."""
 
 # input: offset 30001
+# holding/number/select: offset 40001
 
 ENTITY_DEFINITIONS = {
     "p5_pellet": {
@@ -78,14 +79,14 @@ ENTITY_DEFINITIONS = {
             "translation_key": "p5_pellet_kesseltyp"
         },
         # TODO 1009;P5 Pellet - Fehlerzustand;;1.0;s16
-        # TODO 1010;P5 Pellet - Betriebsstunden für den Kaskadenverbund;;10.0;s16
-        # RG: das scheinen nicht die Betriebsstunden der Anlage zu sein...
+        # 1010;P5 Pellet - Betriebsstunden für den Kaskadenverbund;;10.0;s16
+        # TODO: das scheinen nicht die Betriebsstunden der Anlage zu sein...
         "p5_pellet_betriebsstunden": {
             "register": 31011,
             "unit": "h",
             "scaling": 10,
             "decimals": 1,
-            # "signed": False,
+            "signed": False,
             "state_class": "total",
             "type": "sensor"
         }
@@ -126,6 +127,46 @@ ENTITY_DEFINITIONS = {
         }
     },
     "hk1": {
+        # HOLDING
+        # 2000;Gemischter Heizkreis 1 - Betriebsart Heizkreis;;1.0;s16;0;7;R/W
+        "hk1_betriebsart": {
+            "register": 42001,
+            "options": [
+                "automatik",
+                "dauerabsenken",
+                "dauerkomfort",
+                "frostschutz",
+                "temporaerabsenken",
+                "temporaerkomfort",
+                # 7;Aufheizen;R
+            ],
+            "min": 0,
+            "max": 5,
+            "type": "select",
+        },
+        # 2001;Gemischter Heizkreis 1 - Gewünschte Raumtemperatur in der Heizphase / im Komfortbetrieb;°C;10.0;s16;10.0;30.0;R/W
+        "hk1_sollraumtemperatur_heizphase": {
+            "register": 42002,
+            "unit": "°C",
+            "scaling": 10,
+            "decimals": 1,
+            "min": 10,
+            "max": 30,
+            "device_class": "temperature",
+            "register_type": "holding",
+        },
+        # 2002;Gemischter Heizkreis 1 - Gewünschte Raumtemperatur in der Absenkphase / im Absenkbetrieb;°C;10.0;s16;10.0;30.0;R/W
+        "hk1_sollraumtemperatur_absenkphase": {
+            "register": 42003,
+            "unit": "°C",
+            "scaling": 10,
+            "decimals": 1,
+            "min": 10,
+            "max": 30,
+            "device_class": "temperature",
+            "register_type": "holding",
+        },
+        # INPUT
         # 2000;Gemischter Heizkreis 1 - Außentemperatur;°C;10.0;s16
         "hk1_aussentemperatur": {
             "register": 32001,
