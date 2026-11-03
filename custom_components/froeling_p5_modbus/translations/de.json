@@ -256,12 +256,6 @@
             "hk1_betriebsart": {
                 "name": "Gemischter Heizkreis Betriebsart"
             },
-            "hk1_sollraumtemperatur_heizphase": {
-                "name": "Gemischter Heizkreis Sollraumtemperatur Komfortphase"
-            },
-            "hk1_sollraumtemperatur_absenkphase": {
-                "name": "Gemischter Heizkreis Sollraumtemperatur Absenkphase"
-            },
             "hk1_aussentemperatur": {
                 "name": "Gemischter Heizkreis Außentemperatur"
             },
@@ -328,6 +322,14 @@
             },
             "p5_pellet_erzeuger_aktiv": {
                 "name": "P5 Pellet Erzeuger aktiv"
+            }
+        },
+        "number": {
+            "hk1_sollraumtemperatur_heizphase": {
+                "name": "Gemischter Heizkreis Sollraumtemperatur Komfortphase"
+            },
+            "hk1_sollraumtemperatur_absenkphase": {
+                "name": "Gemischter Heizkreis Sollraumtemperatur Absenkphase"
             }
         },
         "select": {

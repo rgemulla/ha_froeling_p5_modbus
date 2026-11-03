@@ -163,10 +163,10 @@ ENTITY_DEFINITIONS = {
             "unit": "°C",
             "scaling": 10,
             "decimals": 1,
-            "min": 100,
-            "max": 300,
+            "min": 10,
+            "max": 30,
+            "type": "number",
             "device_class": "temperature",
-            "register_type": "holding",
         },
         # 2002;Gemischter Heizkreis 1 - Gewünschte Raumtemperatur in der Absenkphase / im Absenkbetrieb;°C;10.0;s16;10.0;30.0;R/W
         "hk1_sollraumtemperatur_absenkphase": {
@@ -174,10 +174,10 @@ ENTITY_DEFINITIONS = {
             "unit": "°C",
             "scaling": 10,
             "decimals": 1,
-            "min": 100,
-            "max": 300,
+            "min": 10,
+            "max": 30,
+            "type": "number",
             "device_class": "temperature",
-            "register_type": "holding",
         },
         # INPUT
         # 2000;Gemischter Heizkreis 1 - Außentemperatur;°C;10.0;s16
