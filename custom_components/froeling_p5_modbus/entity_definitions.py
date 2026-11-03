@@ -59,8 +59,18 @@ ENTITY_DEFINITIONS = {
             "state_class": "measurement",
             "type": "sensor",
         },
-        # TODO 1006;P5 Pellet - Freigabemanagement - Kessel freigegeben;;1.0;s16
-        # TODO 1007;P5 Pellet - Hydraulikanforderung - Zubringer - Erzeuger aktuell aktiv;;1.0;s16
+        # 1006;P5 Pellet - Freigabemanagement - Kessel freigegeben;;1.0;s16
+        "p5_pellet_kesselfreigabe": {
+            "register": 31007,
+            "state_class": "measurement",
+            "type": "binary_sensor_from_register"
+        },
+        # 1007;P5 Pellet - Hydraulikanforderung - Zubringer - Erzeuger aktuell aktiv;;1.0;s16
+        "p5_pellet_erzeuger_aktiv": {
+            "register": 31008,
+            "state_class": "measurement",
+            "type": "binary_sensor_from_register"
+        },
         # 1008;P5 Pellet - Kesseltyp;;1.0;s16
         "p5_pellet_kesseltyp": {
             "register": 31009,
@@ -70,14 +80,15 @@ ENTITY_DEFINITIONS = {
         # TODO 1009;P5 Pellet - Fehlerzustand;;1.0;s16
         # TODO 1010;P5 Pellet - Betriebsstunden für den Kaskadenverbund;;10.0;s16
         # RG: das scheinen nicht die Betriebsstunden der Anlage zu sein...
-        # "p5_pellet_betriebsstunden": {
-        #     "register": 31011,
-        #     "unit": "h",
-        #     "scaling": 10,
-        #     "decimals": 1,
-        #     "signed": False,
-        #     "type": "sensor"
-        # }
+        "p5_pellet_betriebsstunden": {
+            "register": 31011,
+            "unit": "h",
+            "scaling": 10,
+            "decimals": 1,
+            # "signed": False,
+            "state_class": "total",
+            "type": "sensor"
+        }
     },
     "brennstoff_foerdereinrichtung": {
         # 1500;Brennstoff Fördereinrichtung - Zyklonsystem - Zyklon - Füllstand in Prozent;%;1.0;s16

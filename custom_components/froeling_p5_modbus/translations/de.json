@@ -241,6 +241,9 @@
                     "177": "P5 Pellet 150"
                 }
             },
+            "p5_pellet_betriebsstunden": {
+                "name": "P5 Pellet Betriebsstunden"
+            },
             "brennstoff_foerdereinrichtung_zyklon_fuellstand": {
                 "name": "Brennstoff Fördereinrichtung Zyklon Füllstand"
             },
@@ -311,8 +314,11 @@
             }
         },
         "binary_sensor": {
-            "hk1_heizkreispumpe": {
-                "name": "Gemischter Heizkreis Pumpe aktiv"
+            "p5_pellet_kesselfreigabe": {
+                "name": "P5 Pellet Kesselfreigabe"
+            },
+            "p5_pellet_erzeuger_aktiv": {
+                "name": "P5 Pellet Erzeuger aktiv"
             }
         }
     }
