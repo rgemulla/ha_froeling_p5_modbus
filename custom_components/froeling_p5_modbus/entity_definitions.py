@@ -10,8 +10,8 @@ ENTITY_DEFINITIONS = {
         "p5_pellet_betriebsart": {
             "register": 41001,
             "options": [
-                "aus",
                 "ein",
+                "aus",
             ],
             "min": 0,
             "max": 1,

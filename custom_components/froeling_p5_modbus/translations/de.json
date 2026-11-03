@@ -334,8 +334,8 @@
             "p5_pellet_betriebsart": {
                 "name": "P5 Pellet Betriebsart",
                 "state": {
-                    "aus": "Aus",
-                    "ein": "Ein"
+                    "ein": "Ein",
+                    "aus": "Aus"
                 }
             },
             "hk1_betriebsart": {
