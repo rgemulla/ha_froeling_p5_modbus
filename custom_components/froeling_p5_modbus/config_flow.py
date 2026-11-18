@@ -124,9 +124,9 @@ async def _read_value_helper(
 
                 if definition.get("type") == "text":
                     if entity_id.startswith("kessel_fehlerpuffer_"):
-                        state_translation_key = f"component.froeling_lambdatronic_modbus.entity.sensor.kessel_fehler.state.{raw_value}"
+                        state_translation_key = f"component.froeling_p5_modbus.entity.sensor.kessel_fehler.state.{raw_value}"
                     else:
-                        state_translation_key = f"component.froeling_lambdatronic_modbus.entity.{platform}.{entity_id}.state.{raw_value}"
+                        state_translation_key = f"component.froeling_p5_modbus.entity.{platform}.{entity_id}.state.{raw_value}"
                     return translations.get(
                         state_translation_key, f"Unknown ({raw_value})"
                     )
@@ -230,7 +230,7 @@ class FroelingModbusConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
                                 platform = "binary_sensor"
                             if platform == "text":
                                 platform = "sensor"
-                            translation_key = f"component.froeling_lambdatronic_modbus.entity.{platform}.{entity_id}.name"
+                            translation_key = f"component.froeling_p5_modbus.entity.{platform}.{entity_id}.name"
                             translated_name = translations.get(
                                 translation_key, entity_id
                             )
@@ -345,7 +345,7 @@ class FroelingOptionsFlowHandler(config_entries.OptionsFlow):
                                 platform = "binary_sensor"
                             if platform == "text":
                                 platform = "sensor"
-                            translation_key = f"component.froeling_lambdatronic_modbus.entity.{platform}.{entity_id}.name"
+                            translation_key = f"component.froeling_p5_modbus.entity.{platform}.{entity_id}.name"
                             translated_name = translations.get(
                                 translation_key, entity_id
                             )
